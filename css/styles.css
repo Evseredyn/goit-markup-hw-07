@@ -50,7 +50,8 @@ body {
 
 .header,
 .features,
-.ourwork {
+.ourwork,
+.clients {
     background-color: var(--white-bg-color);
 }
 
@@ -63,7 +64,7 @@ body {
     align-items: center;
 }
 
-.header__logo {
+.logo {
     color: var(--akcent-color);
     font-family: var(--secondary-font);
     font-size: 26px;
@@ -72,12 +73,7 @@ body {
     letter-spacing: 0.78px;
 }
 
-.header__logo:hover,
-.header__logo:focus {
-    
-}
-
-.header-logo {
+.logo--header {
     color: var(--black-color);
 }
 
@@ -87,10 +83,6 @@ body {
 
 .site-nav__list {
     display: flex;
-}
-
-.site-nav__item {
-
 }
 
 .site-nav__item:hover {
@@ -168,18 +160,11 @@ body {
     margin-left: 40px;
 }
 
-.icon-envelope {
+.contacts__icon--start {
     /* width: 16px;
     height: 12px; */
     margin-right: 10px;
     fill: currentColor;
-}
-
-.icon-smartphone {
-    /* width: 10px;
-    height: 16px; */
-    margin-right: 10px;
-    fill:  currentColor;
 }
 
 .hero {
@@ -262,11 +247,6 @@ body {
     background-color: var(--bg-color-item);
     border-radius: 4px;
     margin-bottom: 30px;
-}
-
-.features__icons {
-    /* width: 70px;
-    height: 70px; */
 }
 
 .features__item + .features__item {
@@ -460,9 +440,6 @@ body {
     gap: 30px;
 }
 
-.clients-item {
-}
-
 .clients-link {
     display: flex;
     align-items: center;
@@ -492,7 +469,7 @@ body {
     padding-bottom: 60px;
 }
 
-.footer-logo {
+.logo--footer {
     color: var(--white-color);
 }
 
@@ -567,11 +544,6 @@ body {
     /* width: 20px;
     height: 20px; */
     fill:currentColor;
-}
-
-
-.footer-form {
-
 }
 
 .footer-form-flex {
@@ -1090,10 +1062,6 @@ body {
     color: var(--akcent-color);
     text-decoration: underline;
     margin-left: 4px;
-}
-
-.modal-form > button {
-
 }
 
 .modal-submit-btn {
