@@ -50,3 +50,8 @@ body {
    clip: rect(0 0 0 0);
    overflow: hidden;
 }
+
+.active {
+   color: var(--white-color);
+   background-color: var(--akcent-color);  
+}
