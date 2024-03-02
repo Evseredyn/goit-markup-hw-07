@@ -285,11 +285,14 @@ body {
   overflow: hidden;
 }
 
+<<<<<<< HEAD
 .active {
   color: var(--white-color);
   background-color: var(--akcent-color);
 }
 
+=======
+>>>>>>> d30bdf38e22224d7003535c4fe27fc29259355da
 .header {
   border-bottom: 1px solid #ECECEC;
 }
