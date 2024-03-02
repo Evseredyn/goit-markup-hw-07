@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -41,7 +40,7 @@
         <section class="features section">
             <div class="container">
                 <h2 class="features__title visually-hidden">ПЕРЕВАГИ</h2>
-                <ul class="features__list list features-flex">
+                <ul class="features__list list features--flex">
                     <li class="features__item">
                         <div class="features__thumb">
                             <svg class="features__icons" width="70" height="70">
@@ -368,95 +367,53 @@
             </form>
         </div>
     </footer>
-    <!--Modal-->
+<!--Modal-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-            <button class="modal-close-btn" data-modal-close>
-                <svg class="icon-modal-close" width="18" height="18">
+            <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+            <button class="modal__close-btn" data-modal-close>
+                <svg class="modal__close-icon" width="18" height="18">
                     <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
             </button>
-            <form class="modal-form" >
-                <div class="form-flex">
-                    <div class="form-field person">
-                        <label class="form-label">Ім'я
-                            <input class="form-input" type="text" name="person">
-                            <svg class="icon-person" width="32" height="32">
+            <form class="modal__form" >
+                <div class="modal__form--flex">
+                    <div class="modal__field">
+                        <label class="modal__label">Ім'я
+                            <input class="modal__input" type="text" name="person">
+                            <svg class="modal__icon" width="32" height="32">
                                 <use href="./images/icons.svg#icon-person"></use>
                             </svg>    
                         </label>
                     </div>
-                    <div class="form-field">
-                        <label class="form-label">Телефон
-                            <input class="form-input" type="text" name="phone">
-                            <svg class="icon-phone" width="32" height="32">
+                    <div class="modal__field">
+                        <label class="modal__label">Телефон
+                            <input class="modal__input" type="text" name="phone">
+                            <svg class="modal__icon" width="32" height="32">
                                 <use href="./images/icons.svg#icon-phone"></use>
                             </svg>    
                         </label>
                     </div>
-                    <div class="form-field">
-                        <label class="form-label">Пошта
-                            <input class="form-input" type="text" name="email">
-                            <svg class="icon-email" width="32" height="32">
+                    <div class="modal__field">
+                        <label class="modal__label">Пошта
+                            <input class="modal__input" type="text" name="email">
+                            <svg class="modal__icon" width="32" height="32">
                                 <use href="./images/icons.svg#icon-email"></use>
                             </svg>    
                         </label>
                     </div>
-                    <div class="form-field">
-                        <!-- <p class="messange">Коментар</p> -->
-                        <label class="form-comment">Коментар
-                            <!-- <span class="comment-label">Коментар</span> -->
-                            <textarea class="comment" id="comment" placeholder="Введіть текст" rows="6"></textarea>
+                    <div class="modal__field">
+                        <label class="modal__label-comment">Коментар
+                            <textarea class="modal__comment" id="comment" placeholder="Введіть текст" rows="6"></textarea>
                         </label>
                     </div>
-                    <label class="policy-option">
-                        <input class="checkbox" type="checkbox" name="policy" />
-                        <span class="icon-check"></span>
-                        Погоджуюся з розсилкою та приймаю <a class="policy-link"> Умови договору</a>
+                    <label class="modal__policy-option">
+                        <input class="modal__checkbox" type="checkbox" name="policy" />
+                        <span class="modal__icon-check"></span>
+                        Погоджуюся з розсилкою та приймаю <a class="modal__policy-link"> Умови договору</a>
                     </label>
-                    <button class="modal-submit-btn" type="submit">Відправити</button>
+                    <button class="modal__submit-btn" type="submit">Відправити</button>
                 </div>
-                <!-- <div class="form-flex">
-                    <div class="form-field">
-                        <p class="form-field-title">Ім'я</p>
-                        <input type="text" class="form-input" name="name" id="name" autofocus />
-                        <label for="name" class="form-label name">
-                            <svg class="icon-form-field" width="24" height="24">
-                                <use href="./images/icons.svg#icon-person-black"></use>
-                            </svg>
-                        </label>
-                    </div>
-                    <div class="form-field">
-                        <p class="form-field-title">Телефон</p>
-                        <input type="text" class="form-input" name="tel" id="tel" />
-                        <label for="tel" class="form-label tel">
-                            <svg class="icon-form-field" width="24" height="24">
-                                <use href="./images/icons.svg#icon-phone-black"></use>
-                            </svg>
-                        </label>
-                    </div>
-                    <div class="form-field">
-                        <p class="form-field-title">Пошта</p>
-                        <input class="form-input" type="text" class="form-input" name="email" id="email" />
-                        <label for="email-1" class="form-label email">
-                            <svg class="icon-form-field" width="24" height="24">
-                                <use href="./images/icons.svg#icon-email-black"></use>
-                            </svg>
-                        </label>
-                    </div>
-                    <div class="form-field">
-                        <p class="form-field-title">Коментар</p>
-                        <label for="comment"></label>
-                        <textarea name="comment" id="comment" placeholder="Введіть текст" rows="10"></textarea>
-                    </div>
-                    <label class="policy-option">
-                        <input class="checkbox" type="checkbox" name="policy" />
-                        <span class="icon-check"></span>
-                        Погоджуюся з розсилкою та приймаю <a class="policy-link"> Умови договору</a>
-                    </label>
-                    <button class="modal-submit-btn" type="submit">Відправити</button>
-                </div> -->
             </form>
         </div>
     </div>

@@ -10,40 +10,40 @@
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-}
 
-.hero__title {
-    margin: 0 auto;
-    width: 700px;
-    margin-bottom: 30px;
-    color: var(--first-title-color);
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
-}
+    &__title {
+        margin: 0 auto;
+        width: 700px;
+        margin-bottom: 30px;
+        color: $color-first-title;
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 1.36;
+        letter-spacing: 2.64px;
+        text-transform: uppercase;
+    }
 
-.hero__btn {
+    &__btn {
     display: inline-block;
-    color: var(--white-color);
+    color: $color-white;
     font-family: inherit;
-    background-color: var(--akcent-color);
+    background-color: $color-akcent;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.96px;
-    border: var(--akcent-color);
+    border: $color-akcent;
     border-radius: 4px;
     padding: 10px 24px;
     min-width: 200px;
     cursor: pointer;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    transition: color var(--duration) var(--timing-function), background-color var(--duration) var(--timing-function);
+    transition: color $duration $timing-function, background-color $duration $timing-function;
 }
 
-.hero__btn:hover,
-.hero__btn:focus {
-    color: var(--akcent-color);
-    background-color: var(--white-bg-color);
+    &__btn:hover,
+    &__btn:focus {
+    color: $color-akcent;
+    background-color: $color-white-bg;
+}
 }

@@ -1,7 +1,7 @@
 .clients__title {
     margin: 0;
     margin-bottom: 50px;
-    color: var(--secondary-title-color);
+    color: $color-secondary-title;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -9,28 +9,31 @@
     letter-spacing: 1.08px;
 }
 
-.clients__list--flex {
+.clients {
+    
+    &__list--flex {
     display: flex;
     gap: 30px;
-}
+    }
 
-.clients__link {
+    &__link {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 92px;
     width: 170px;
-    color: var(--icon-color);
-    border: 1px solid var(--icon-color);
+    color: $color-icon;
+    border: 1px solid $color-icon;
     border-radius: 4px;
-    transition: color var(--duration) var(--timing-function), border var(--duration) var(--timing-function);
-}
+    transition: color $duration $timing-function, border $duration $timing-function;
+    }
 
-.clients__link:hover,
-.clients__link:focus {
-    color: var(--akcent-color);
-    border: 1px solid var(--akcent-color);
-}
-.clients__icon {
+    &__link:hover,
+    &__link:focus {
+    color: $color-akcent;
+    border: 1px solid $color-akcent;
+    }
+    &__icon {
     fill: currentColor;
-}
+    }
+}  
