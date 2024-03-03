@@ -94,8 +94,7 @@
     }
 
     &__input:focus {
-    border: 1px solid var($color-akcent);
-
+    border: 1px solid $color-akcent;
     }
 
     &__label {
@@ -117,7 +116,7 @@
     }
 
     &__input:focus ~ &__icon {
-    fill: var($color-akcent);
+    fill: $color-akcent;
     }
 
     &__comment {
@@ -136,7 +135,7 @@
     }
 
     &__comment:focus {
-    border: 1px solid var($color-akcent);
+    border: 1px solid $color-akcent;
     }
 
     &__policy-option {

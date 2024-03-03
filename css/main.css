@@ -943,7 +943,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__input:focus {
-  border: 1px solid var(#2196F3);
+  border: 1px solid #2196F3;
 }
 .modal__label {
   display: block;
@@ -963,7 +963,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__input:focus ~ .modal__icon {
-  fill: var(#2196F3);
+  fill: #2196F3;
 }
 .modal__comment {
   margin-top: 4px;
@@ -980,7 +980,7 @@ body {
   outline: none;
 }
 .modal__comment:focus {
-  border: 1px solid var(#2196F3);
+  border: 1px solid #2196F3;
 }
 .modal__policy-option {
   display: -webkit-box;
